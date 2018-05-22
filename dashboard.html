@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Twitter</title>
+</head>
+
+<body>
+    <div class="dash-main-container">
+        <svg style="display: none;" class="twitterIcon-bird" viewBox="0 0 1208 982" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+            <title>bird</title>
+            <desc>Created with Sketch.</desc>
+            <defs>
+                <g id="Final-Horizon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-286.000000, -117.000000)" fill-rule="nonzero" fill="#1B95E0">
+                        <path d="M1493.75308,233.195911 C1449.31783,252.922544 1401.56126,266.207828 1351.43951,272.19627 C1402.61804,241.549536 1441.92034,192.987798 1460.3889,135.116296 C1412.53168,163.498493 1359.49119,184.130942 1303.02874,195.252335 C1257.88897,147.093181 1193.42514,117 1122.16771,117 C962.190754,117 844.636121,266.258151 880.768067,421.202806 C674.896491,410.886582 492.324484,312.253414 370.089808,162.341063 C305.17308,273.705962 336.423691,419.391176 446.731805,493.16476 C406.171431,491.856361 367.925917,480.734968 334.561738,462.165765 C331.844294,576.95263 414.122472,684.342008 533.287442,708.245454 C498.413572,717.706186 460.218381,719.9204 421.368991,712.47259 C452.871217,810.904465 544.358512,882.514158 652.854997,884.52708 C548.686294,966.201382 417.443793,1002.68559 286,987.186091 C395.653915,1057.48739 525.940278,1098.50067 665.838342,1098.50067 C1125.89162,1098.50067 1385.81015,709.956437 1370.10936,361.469352 C1418.52012,326.494836 1460.53987,282.864756 1493.75308,233.195911 Z"
+                            id="bird"></path>
+                    </g>
+                </g>
+            </defs>
+        </svg>
+        <header class="dash-header flexrow">
+            <div class="dash-container flexrow">
+                <ul class="dash-top-links flexrow">
+                    <li>
+                        <a href="dashboard.html" class="top-notifs dash-top-active flexrow">
+                            <i class="fas fa-home">
+                                <div class="dash-dot"></div>
+                            </i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html" class="top-notifs flexrow">
+                            <i class="fas fa-bell"></i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html" class="top-notifs flexrow">
+                            <i class="fas fa-envelope-square"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="index.html" class="dash-top-logo">
+                    <svg class="header-twitterIcon-bird" viewBox="0 0 1208 982" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+                        <title>bird</title>
+                        <desc>Created with Sketch.</desc>
+                        <use href="#Final-Horizon" />
+                    </svg>
+                </a>
+                <ul class="dash-top-search flexrow">
+                    <li>
+                        <input type="search" name="search" placeholder="Search Twitter">
+                    </li>
+                    <li>
+                        <i class="fas fa-user-circle"></i>
+                    </li>
+                    <li>
+                        <button type="submit">Tweet</button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="dash-main-container dash-container flexrow">
+            <aside class="dash-left-side flexcolumn">
+                <div class="dash-user">
+                    <div class="dash-bg-profi"></div>
+                    <div class="user-side flexrow">
+                        <span class="flexrow">
+                            <i class="fas fa-camera"></i>
+                        </span>
+                        <span class="uname">
+                            <h3>Anthony Rommanus</h3>
+                            <h4>@thonyromes</h4>
+                        </span>
+                    </div>
+                    <table class="l-table">
+                        <thead>
+                            <tr>
+                                <th>Tweets</th>
+                                <th>Following</th>
+                                <th>Followers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9</td>
+                                <td>354</td>
+                                <td>56</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dash-trends trends-left flexcolumn">
+                    <h3>Trends for you
+                        <a href="#"> . Change</a>
+                    </h3>
+                    <ul class="t-trends">
+                        <li>
+                            <h4>
+                                <a href="#">#Soundltafrica</a>
+                            </h4>
+                            <span>1443k Tweets</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">Kenneth Omeruo</a>
+                            </h4>
+                            <span>1,008 Tweets</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">#MondayMotivation</a>
+                            </h4>
+                            <span>66.1k Tweets</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">##DSYLMMusicVideo</a>
+                            </h4>
+                            <span>@abeapinheiro_ is Tweeting about this</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">FamilyFortunePromo</a>
+                            </h4>
+                            <span>1,008 Tweets</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">#YourStyleByAtobaba</a>
+                            </h4>
+                            <span></span>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="#">#NassOpenWeek</a>
+                            </h4>
+                            <span>1443k Tweets</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">Go Russia</a>
+                            </h4>
+                            <span>1,008 Tweets</span>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="#">#13ReasonsWhy2</a>
+                            </h4>
+                            <span>@lindinaldol is Tweeting about this</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+            <section class="dash-sect flexcolumn">
+                <div class="share-tweet flexrow">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="tweet-hap">
+                        <input type="text" name="tweet-hap" id="tweet-input" placeholder="What's happening?" />
+                    </span>
+                </div>
+                <div class="new-tweets flexrow">
+                    <a href="#">See new Tweets</a>
+                    <i class="fas fa-chevron-down fa-sm  "></i>
+                </div>
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-img flexrow">
+                            <img src="img/nl-david.jpg" alt="Davido">
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-img flexrow">
+                            <img src="img/nl-david.jpg" alt="Davido">
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-img flexrow">
+                            <img src="img/nl-david.jpg" alt="Davido">
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-img flexrow">
+                            <img src="img/nl-david.jpg" alt="Davido">
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-img flexrow">
+                            <img src="img/nl-david.jpg" alt="Davido">
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-content flexrow">
+                    <span>
+                        <img src="img/nl-logo.jpg" alt="Nl-Logo" />
+                    </span>
+                    <div class="dash-content-text flexcolumn">
+                        <div class="content-dis flexrow">
+                            <span>
+                                <h3>
+                                    <a href="#">Naijaloaded.com</a>@NL_Official . 20h</h3>
+                                <p>S/O Of The Day Goes To @femibranch As He Turns A Year Older - Happy Birthday</p>
+                                <p>Here on Naijaloaded, we celebrate this talented actor on his special day as he turns a year
+                                    older,we say a LOUD Happy Birthday!!!</p>
+                            </span>
+                            <i class="fas fa-chevron-down fa-sm  "></i>
+                        </div>
+                        <div class="dash-content-icos flexrow">
+                            <i class="fas fa-comment fa-sm"></i>
+                            <i class="fas fa-sync fa-sm  "></i>
+                            <i class="fas fa-heart fa-sm  "></i>
+                            <i class="fas fa-envelope-square fa-sm  "></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <aside class="dash-right-side flexcolumn">
+                <div class="dash-follow">
+                    <div class="dash-trends">
+                        <h3>Who to follow
+                            <a href="#"> . Refresh</a>
+                            <a href="#"> . View all</a>
+                        </h3>
+                    </div>
+                    <div class="who-follow flexrow">
+                        <span>
+                            <img src="img/nl-logo.jpg" alt="pic1" />
+                        </span>
+                        <div class="folotext">
+                            <a href="#" class="flexrow">
+                                <h4>Paulinha</h4>
+                                <span>@freitaspaula</span>
+                            </a>
+                            <button type="submit">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="who-follow flexrow">
+                        <span>
+                            <img src="img/nl-logo.jpg" alt="pic1" />
+                        </span>
+                        <div class="folotext">
+                            <a href="#" class="flexrow">
+                                <h4>Winson Tan Jaya</h4>
+                                <span>@Winsonmeya</span>
+                            </a>
+                            <button type="submit">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="who-follow flexrow">
+                        <span>
+                            <img src="img/nl-logo.jpg" alt="pic1" />
+                        </span>
+                        <div class="folotext">
+                            <a href="#" class="flexrow">
+                                <h4>Wolfgang Imam Achmad</h4>
+                                <span>@Wolfy</span>
+                            </a>
+                            <button type="submit">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="find flexrow">
+                        <i class="fas fa-users"></i>
+                        <a href="#">Find people around you</a>
+                    </div>
+                </div>
+                <div class="right-foot">
+                    <ul class="item-list flexrow">
+                        <li>
+                            <a href="#">&copy; 2018 Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Status</a>
+                        </li>
+                        <li>
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Ads info</a>
+                        </li>
+                        <li>
+                            <a href="">Brand</a>
+                        </li>
+                        <li>
+                            <a href="#">Apps</a>
+                        </li>
+                        <li>
+                            <a href="#">Marketing</a>
+                        </li>
+                        <li>
+                            <a href="">Businesses</a>
+                        </li>
+                        <li>
+                            <a href="#">Developers</a>
+                        </li>
+                    </ul>
+                    <div class="find flexrow">
+                        <i class="fas fa-arrow-right fa-sm"></i>
+                        <a href="#">Advertise with Twitter</a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+
+</html>

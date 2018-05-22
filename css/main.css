@@ -1,0 +1,913 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Helvetica Neue LT", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: inherit;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button[type="submit"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.main-container {
+    max-width: 100%;
+    min-width: 160px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.dash-main-container {
+    max-width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: rgb(229, 235, 239);
+}
+
+.flexrow {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+}
+
+/* Landing Page */
+
+.bg-twitter,
+.bg-sign {
+    flex: 1 50%;
+    height: 93vh;
+    padding: 0.5em;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.items {
+    height: 7vh;
+}
+
+.bg-twitter {
+    background-color: transparent;
+    color: white;
+}
+
+.bg-twit-svg {
+    position: absolute;
+    height: 113vh;
+    width: 100vw;
+    top: -20vh;
+    text-align: center;
+    background-color: rgb(29, 169, 245);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-twitterIcon-bird {
+    height: 135%;
+}
+
+.bg-sign {
+    background-color: white;
+    color: black;
+}
+
+.likes {
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+}
+
+.likes i {
+    flex: 0 0 50px;
+    font-size: 2em;
+}
+
+.likes span {
+    flex: 1;
+    font-size: 1.15em;
+    font-weight: 700;
+}
+
+.likes:not(:last-of-type) {
+    margin-bottom: 5vh;
+}
+
+.interests {
+    flex-basis: 60%;
+}
+
+.top-log-full {
+    flex-basis: 90%;
+    margin-top: 1em;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+.in-form {
+    flex-basis: 38%;
+}
+
+.in-form a {
+    font-size: 85%;
+    color: rgb(180, 180, 180);
+}
+
+.log-form {
+    flex-basis: 10%
+}
+
+.in-form input {
+    padding: 1em 0.75em;
+    width: 95%;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 0.25em;
+    outline: none
+}
+
+.in-form input:focus {
+    border-color: rgb(122, 204, 248);
+}
+
+.log-form input {
+    color: rgb(29, 169, 245);
+    background-color: white;
+    padding: 1em;
+    border: 1px solid rgb(29, 169, 245);
+    border-radius: 2em;
+    font-size: 80%;
+    font-weight: 700;
+}
+
+.log-form input:hover {
+    background-color: rgba(29, 169, 245, 0.1);
+}
+
+.join {
+    flex-basis: 53%;
+    margin-bottom: 20%;
+}
+
+.top-log {
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.top-log i {
+    font-size: 3em;
+    color: rgb(29, 169, 245);
+}
+
+.top-log a {
+    color: rgb(29, 169, 245);
+    background-color: white;
+    padding: 0.9em;
+    border: 1px solid rgb(29, 169, 245);
+    border-radius: 2em;
+    font-size: 80%;
+    font-weight: 700;
+    display: none;
+}
+
+.top-log a:hover {
+    background-color: rgba(29, 169, 245, 0.1);
+}
+
+.ico-twit-svg {
+    height: 5vh;
+}
+
+.ico-twitterIcon-bird {
+    height: 100%;
+}
+
+.join h1 {
+    font-size: 28px;
+    margin-bottom: 1.75em;
+}
+
+.sign-up,
+.sign-in {
+    margin-top: 1em;
+    text-align: center;
+    background-color: rgb(29, 169, 245);
+    border: 1px solid rgb(29, 169, 245);
+    border-radius: 2em;
+    font-size: 80%;
+}
+
+.sign-in {
+    background-color: white;
+}
+
+.sign-up a,
+.sign-in a {
+    display: block;
+    padding: 0.6em;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+}
+
+.sign-in a {
+    color: rgb(29, 169, 245);
+}
+
+.sign-up:hover {
+    background-color: rgb(0, 109, 191)
+}
+
+.sign-in:hover {
+    background-color: rgba(29, 169, 245, 0.1);
+}
+
+.item-list {
+    padding: 0.5em;
+    background-color: white;
+}
+
+.item-list li a {
+    padding: 0 0.75em;
+    color: rgb(170, 184, 194);
+    font-size: 75%;
+}
+
+.item-list li a:hover {
+    text-decoration: underline;
+}
+
+/* /.Landing Page */
+
+/*Dashboard*/
+
+.dash-container {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.75em;
+}
+
+.dash-header {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25)
+}
+
+.dash-main-container {
+    align-items: flex-start;
+}
+
+.dash-header .dash-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.dash-left-side {
+    flex: 0 0 300px;
+    padding-right: 0.75em;
+    border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.dash-sect {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 0.75em;
+}
+
+.dash-right-side {
+    flex: 0 0 300px;
+}
+
+.dash-user {
+    background-color: white;
+    margin-bottom: 0.75em;
+    height: 30vh;
+}
+
+.trends-left,
+.dash-follow {
+    background-color: white;
+    padding: 1em;
+}
+
+.share-tweet {
+    background-color: rgb(232, 245, 253);
+    flex-wrap: nowrap;
+}
+
+.dash-content {
+    background-color: white;
+}
+
+.dash-follow {
+    background-color: white;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.right-foot {
+    background-color: white;
+}
+
+.dash-top-links {
+    flex-basis: 45%;
+    justify-content: flex-start;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.dash-top-logo {
+    flex-basis: 10%;
+    height: 2.5vh;
+    text-align: center;
+}
+
+.header-twitterIcon-bird {
+    height: 100%;
+}
+
+.dash-top-links li a {
+    background-color: white;
+    color: rgb(128, 142, 155);
+}
+
+.dash-top-links a {
+    padding-right: 0.75em;
+}
+
+.dash-top-links li:first-of-type {
+    padding-left: 1em;
+}
+
+.top-notifs {
+    flex-wrap: nowrap;
+    height: 50px;
+    justify-content: flex-start;
+}
+
+.top-notifs:hover {
+    border-bottom: 0.175em solid #1da1f2;
+    color: rgb(29, 161, 242);
+}
+
+.dash-top-active {
+    border-bottom: 0.175em solid #1da1f2;
+}
+
+.dash-top-active>* {
+    color: rgb(29, 161, 242);
+}
+
+.top-notifs i {
+    position: relative;
+    flex: 0 0 10%;
+    font-size: 1.2em;
+    padding-left: 0.4em;
+}
+
+.top-notifs span {
+    flex: 1 90%;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding-left: 0.25em;
+}
+
+.dash-top-search {
+    flex-basis: 45%;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.dash-top-search li:nth-child(1) {
+    flex-basis: 45%;
+    padding-right: 0.75em;
+}
+
+.dash-top-search li:nth-child(2) {
+    padding-right: 0.75em;
+}
+
+.dash-top-search li:nth-child(3) {
+    flex: 0 0 13%;
+}
+
+.dash-top-search input {
+    height: 5vh;
+    width: 100%;
+    border-radius: 2em 2em;
+    border: 1px solid rgb(230, 236, 240);
+    background-color: rgb(245, 248, 250);
+    padding-left: 1em;
+}
+
+.dash-top-search i {
+    font-size: 2em;
+}
+
+.dash-top-search button {
+    height: 5.25vh;
+    width: 100%;
+    border: none;
+    background-color: rgb(74, 179, 244);
+    color: white;
+    border-radius: 2em 2em;
+    font-weight: 900;
+}
+
+.dash-top-search button:hover {
+    background-color: rgb(29, 161, 242);
+}
+
+.dash-dot {
+    height: 6px;
+    width: 6px;
+    background-color: rgb(29, 161, 242);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.user-side {
+    justify-content: flex-end;
+    height: 25%;
+}
+
+.dash-bg-profi {
+    min-height: 45%;
+    background-color: rgb(29, 161, 242)
+}
+
+.user-side span:first-of-type {
+    position: relative;
+    width: 4.75em;
+    height: 4.75em;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    left: -10px;
+    top: -30px;
+    z-index: 1;
+}
+
+.user-side i {
+    font-size: 1.5em;
+}
+
+.user-side .uname {
+    flex-basis: 68%;
+    position: relative;
+    top: -10px;
+}
+
+.user-side h3 {
+    font-size: 18px;
+}
+
+.uname h4 {
+    color: rgb(101, 119, 134);
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.l-table {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding-top: 0.15em;
+}
+
+.l-table th {
+    font-size: 12px;
+    color: rgb(101, 119, 134);
+}
+
+.l-table td {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(29, 161, 242);
+    padding: 0;
+    line-height: 1em;
+}
+
+.dash-trends h3 {
+    font-size: 17px;
+}
+
+.dash-trends h3 a {
+    font-size: 12px;
+    color: rgb(29, 161, 242);
+    font-weight: normal;
+}
+
+.dash-trends h3 a:hover {
+    text-decoration: underline;
+}
+
+.t-trends li {
+    margin: 0.75em 0;
+}
+
+.t-trends li h4 {
+    line-height: 0.5em;
+}
+
+.t-trends li h4 a {
+    font-size: 13px;
+    color: rgb(29, 161, 242);
+}
+
+.t-trends li h4 a:hover {
+    text-decoration: underline;
+}
+
+.t-trends li span {
+    font-size: 12px;
+    color: rgb(137, 150, 162);
+}
+
+.who-follow {
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgb(230, 236, 240);
+    justify-content: flex-start;
+}
+
+.who-follow span {
+    flex: 0 0 20%;
+}
+
+.who-follow span img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.folotext {
+    flex: 1;
+    padding-left: 0.75em;
+}
+
+.folotext a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.folotext a:hover>h4 {
+    text-decoration: underline;
+    color: rgb(29, 161, 242);
+}
+
+.folotext h4 {
+    flex-basis: auto;
+    flex-shrink: 0;
+    line-height: 2em;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+.folotext span {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(101, 119, 134);
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 0.25em;
+}
+
+.folotext button {
+    width: 55%;
+    background-color: white;
+    color: rgb(38, 165, 242);
+    border: 1px solid rgb(38, 165, 242);
+    border-radius: 2em 2em;
+    padding: 0.5em;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.folotext button:hover {
+    background-color: rgba(29, 169, 245, 0.1);
+}
+
+.find {
+    padding-top: 0.75em;
+    justify-content: flex-start;
+}
+
+.find i {
+    color: rgb(92, 187, 246);
+}
+
+.find a {
+    color: rgb(92, 187, 246);
+    font-size: 12px;
+    padding-left: 0.5em;
+}
+
+.find a:hover {
+    text-decoration: underline;
+}
+
+.right-foot {
+    padding: 1em;
+}
+
+.right-foot .item-list {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0.5em;
+    justify-content: flex-start;
+}
+
+.right-foot .item-list li {
+    padding: 0;
+    margin: 0;
+}
+
+.right-foot .item-list li a {
+    padding: 0;
+    padding-right: 0.75em;
+    margin: 0;
+    color: rgb(101, 119, 134);
+}
+
+.right-foot .find {
+    border-top: 1px solid rgb(230, 236, 240);
+}
+
+.dash-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgb(230, 236, 240);
+    cursor: pointer;
+}
+
+.dash-content-text {
+    flex: 1;
+}
+
+.dash-content span {
+    flex: 0 0 10%;
+}
+
+.dash-content span img {
+    max-width: 100%;
+}
+
+.content-dis {
+    flex: 1;
+    padding: 0.75em;
+    padding-top: 0;
+    align-items: flex-start;
+}
+
+.content-dis span {
+    flex: 1;
+}
+
+.content-dis span h3 {
+    color: rgb(101, 119, 134);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.content-dis span h3 a {
+    color: black;
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+.content-dis span p {
+    font-size: 14px;
+}
+
+.content-dis > i {
+    color: rgb(101, 119, 134);
+}
+
+.dash-content:hover {
+    background-color: rgb(245, 248, 250);
+}
+
+.dash-content-img {
+    padding: 0.75em;
+    padding-top: 0;
+}
+
+.dash-content-img img {
+    max-width: 100%;
+    border: 1px solid rgb(230, 236, 240);
+    border-radius: 0.5em;
+}
+
+.dash-content-icos {
+    justify-content: flex-start;
+    padding: 0.75em;
+}
+
+.dash-content-icos i{
+    flex-basis: 15%;
+}
+
+.share-tweet i {
+    flex: 0 0 10%;
+    font-size: 2em;
+    text-align: right;
+}
+
+.tweet-hap {
+    flex-basis: 90%;
+    padding: 0.75em;
+}
+
+.tweet-hap input {
+    height: 5vh;
+    width: 100%;
+    border: 1px solid rgb(198, 231, 251);
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.new-tweets {
+    height: 5vh;
+    background-color: rgb(245, 248, 250);
+    border-top: 1px solid rgb(230, 236, 240);
+    border-bottom: 1px solid rgb(230, 236, 240);
+    cursor: pointer;
+}
+
+.new-tweets a {
+    flex-basis: 93%;
+    font-size: 14px;
+    color: rgb(29, 161, 242);
+    text-align: center;
+}
+
+.new-tweets a:hover {
+    text-decoration: underline;
+}
+
+.new-tweets i {
+    text-align: right;
+    color: rgb(101, 119, 134);
+}
+
+
+/*/.Dashborad*/
+
+/*Media queries*/
+
+@media screen and (min-width:1200px) and (min-height: 800px) {
+    .top-log-full {
+        margin-top: 5%;
+    }
+    .join {
+        margin-bottom: 40%;
+    }
+}
+
+@media screen and (min-width:1000px) and (min-height: 1200px) {
+    .top-log-full {
+        margin-top: 20%;
+    }
+    .join {
+        margin-bottom: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .bg-twitter,
+    .bg-sign {
+        height: 90vh;
+    }
+    .items {
+        height: 10vh;
+    }
+    .bg-twit-svg {
+        height: 110vh;
+    }
+    .dash-top-search {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .bg-twitter,
+    .bg-sign {
+        height: 85vh;
+    }
+    .items {
+        height: 15vh;
+    }
+    .bg-twit-svg {
+        height: 105vh;
+    }
+    .interests,
+    .join {
+        flex-basis: 80%;
+    }
+    .top-log-full {
+        display: none;
+    }
+    .top-log a {
+        display: block;
+    }
+    .join {
+        margin-bottom: 0;
+    }
+    .new-tweets a {
+        flex-basis: 89%;
+    }    
+}
+
+@media screen and (max-width: 710px) {
+    .dash-left-side, .dash-right-side {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        overflow-y: scroll;
+    }
+    .bg-twitter,
+    .bg-sign {
+        flex-basis: 100%;
+    }
+    .bg-sign {
+        order: 1;
+        height: auto;
+    }
+    .bg-twitter {
+        order: 2;
+        height: auto;
+        background-color: rgb(29, 169, 245);
+    }
+    .bg-twit-svg {
+        display: none;
+    }
+    .interests,
+    .join {
+        flex-basis: 90%;
+    }
+    .items {
+        height: auto;
+    }
+
+    .top-notifs span {
+        display: none;
+    }
+
+    .top-notifs  i {
+        padding-left: 1em;
+    }
+}
